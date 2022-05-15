@@ -1,15 +1,13 @@
 .sidebar{
     background-color:#192a4d ;
-   
-    position: sticky;
-    display: inline;
+    padding-top: 70px;
+    position: fixed;
     left: 0;
     width: 150px;
     height: 100%;
     transition: 0.3s;
     opacity: 1;
-    top: 0;
-
+    
 }
 
 .sidebar a{
@@ -34,7 +32,7 @@
 }
 
 label #sidebar-btn{
-    
+    z-index: 1;
     font-size: 30px;
     padding-right: 40px;
 }
@@ -73,12 +71,11 @@ label #sidebar-btn{
 
 
 
-/* sidebar*/
+/* */
 
 .navbar{
     background: #232D53;
     padding: 1em; 
-    z-index: -1;
 }
 
 
