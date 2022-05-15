@@ -1,0 +1,44 @@
+
+.test {
+    position: absolute;
+    left: 0;
+}
+
+.left-nav-col {
+   /* display: none; */
+   position: absolute;
+}
+
+.radio-container {
+   margin-left: 3em;
+}
+
+.form-field{
+    margin-bottom: 20px;
+}
+
+.form-field input:focus {
+    outline: none;
+}
+
+.error input, .error textarea, .error select{
+    border-color: red;
+}
+
+.error .radio-label {
+    color: red;
+}
+
+.success input, .success textarea  {
+    border-color: green;
+}
+
+
+.form-field small {
+    color: red;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
