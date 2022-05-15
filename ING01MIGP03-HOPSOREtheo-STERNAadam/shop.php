@@ -17,13 +17,11 @@
 <body>
     <?php
         include("varSession.inc.php");
-        include ("phpLinkedPages/header.php");
+        include ("sidebar.html");
     ?>
 
    <div class="main">
-   <?php 
-      include ("./phpLinkedPages/shop-nav.php");
-    ?>
+  
     
 
    <section class="sales-section" id="sales-id">
@@ -43,7 +41,10 @@
            <?php 
            function product($product){
             $echo= '<div class="product">
-               <img src="./images/'.$product[0].'" class="product-img">
+                <div class = "product-img">
+                    <img src="./images/'.$product[0].'" class="product-img">
+                </div>
+               
                <div class="product-header">
                    <h2 class="product-name">'.$product[1].'</h2>
                    <p class="product-detail">'.$product[2].'</p>  

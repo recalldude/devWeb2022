@@ -17,7 +17,7 @@
             <ul class="secondary-nav">
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="shop.php?cat=Planet">Shop</a></li>
-                <li class="connect-cta"><div><a href="#sales-id">Connect</a></div></li>
+                <li class="connect-cta"><div><a href="connect.php">Connect</a></div></li>
            </ul>
         </nav>
     </div>

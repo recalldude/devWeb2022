@@ -25,7 +25,7 @@
             <div class="contact-left">
                 <h2>Contact</h2>
 
-                <form action="">
+                <form action="contact_back.php" method="post">
                   <div class="form-field">
                     <label for="name">Surname</label>
                     <input type="text" id="surname" name="surname" size="30">
@@ -55,7 +55,7 @@
 
                   
                   <div class="form-field">
-                    <label for="" class="radio-label">Gender</label>
+                    <label for="radio-1" class="radio-label">Gender</label>
                     <input type="radio" name="radio" id="radio-1" value="man" class="radio">
                     <label for="radio-1" >Man</label>
 
@@ -82,6 +82,6 @@
       include ("phpLinkedPages/footer.html");
     ?>
     
-    <script src="./script/formValidation.js"></script>
+    <!--<script src="./script/formValidation.js"></script>-->
 </body>
 </html>

@@ -1,8 +1,5 @@
 <?php 
-    $user = $_SESSION['username'];
-    $pass = $_SESSION['password'];
-
-
+    
     $productsList = array( /* array(
         catégorie =>array(
              produit => array (image, nom, desc, id, stock, prix)))*/

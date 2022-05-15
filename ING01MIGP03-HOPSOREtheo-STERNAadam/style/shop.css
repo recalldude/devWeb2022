@@ -1,6 +1,6 @@
 
 .sales-section {
-    background: var(--primary-color);
+    background: #14213d;
     color: white;
     padding-top: 0;
     font-size: 1em;
@@ -22,20 +22,21 @@
 
 
 .product{
-  background: #14213D;
+  background: #192a4d;
   padding: 70px;
   border-radius: 50px;
   max-width: 220px;
   margin:0px 10px 80px 10px;
+  max-height: 1000px;
 }
 
-.product-img{
+.product-img img{
   max-width: 220px;
   width: 100%;
   justify-content: center;
 }
 
-.product-img:hover {
+.product-img img:hover {
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
@@ -47,6 +48,7 @@
     font-weight: lighter;
     font-size: small;
     margin-top: 0px;
+    height: 100%;
 }
 
 .stock-containner {

@@ -13,7 +13,7 @@
 <body>
 
   <?php 
-  include ("phpLinkedPages/header.html");
+  include ("phpLinkedPages\header.php");
 ?>
 
   

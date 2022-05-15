@@ -14,13 +14,11 @@
 <body>
     <?php 
         include("varSession.inc.php");
-        include ("phpLinkedPages/header.php");
+        include ("sidebar.html");
     ?>
 
-    <div class="main">
-    <?php 
-      include ("./phpLinkedPages/shop-nav.php");
-    ?>
+    
+   
 
     <section class="hero">
         <div class="container">
@@ -28,7 +26,7 @@
                 <p>An easy way to buy your planet</p>
                 <h1>Buy your new planet</h1>
                 <div class="hero-cta">
-                    <a href="shop.html" class="primary-cta">Buy </a>
+                    <a href="shop.php?cat=Planet" class="primary-cta">Buy </a>
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="watch-video-cta"><img src="./images/watch.svg" alt="Watch a video">Watch the presentation</a>
                 </div>
             </div>
