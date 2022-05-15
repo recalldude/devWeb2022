@@ -11,12 +11,12 @@
 <body>
 
   <?php 
-  include ("sidebar.html");
+  include ("sidebar.php");
 ?>
 
   
 <div class="form-containner">
-            <form action="signInBack.php" method="post">
+            <form action="connect_back.php" method="post">
                 <h1 class="title">Connect</h1>
                 <div class="content-containner">
                     <div class="input-containner">

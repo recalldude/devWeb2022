@@ -50,8 +50,8 @@
                    <p class="product-detail">'.$product[2].'</p>  
                    <h3 class="product-ref">ref :'.$product[3].'</h3> 
                    <div class="stock-containner">
-                        <h3 class="stock-title">Stock </h3>   
-                        <h3 class="stock planet" >: '.$product[4].'</h3>
+                        <h3 class="stock-title">Stock: </h3>   
+                        <h3 class="stock planet" >'.$product[4].'</h3>
                     </div>   
                </div>
                <div class="product-body">

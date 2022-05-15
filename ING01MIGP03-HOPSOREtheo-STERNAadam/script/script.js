@@ -21,8 +21,9 @@ showStockButton.addEventListener("click", showStock);
 /*Permet de ne pas dépasser le stock même à l'écrit*/
 for (let i=0; i < stockEl.length; i++){
    inputEl[i].addEventListener('change', function(event) {
-       if (event.target.value > parseInt(stockEl[i].innerHTML)) {
-           event.target.value = parseInt(stockEl[i].innerHTML);
+    let stock = event.target.parentElement.parentElement.parentElement.children[1].children[3].children[1].innerHTML;
+       if (event.target.value > parseInt(stock)) {
+           event.target.value = parseInt(stock);
        } else if(event.target.value < 0) {
             event.target.value = 0;
        }
@@ -32,17 +33,18 @@ for (let i=0; i < stockEl.length; i++){
 /*Pour incrémenter la qte*/
 for(let i=0; i < incremmentButton.length; i++){
     incremmentButton[i].addEventListener('click', function(event) {
+        let stock = event.target.parentElement.parentElement.parentElement.children[1].children[3].children[1].innerHTML;
         let input = event.target.parentElement.children[1];
         console.log(input);
-        console.log(parseInt(stockEl[i]))
-        if (parseInt(input.value) + 1 == parseInt(stockEl[i].innerHTML)) {
+       
+        if (parseInt(input.value) + 1 == parseInt(stock)) {
             input.value++;
             event.target.style.opacity = "0.3";
             event.target.style.cursor = "default";  
-        } else if(input.value < parseInt(stockEl[i].innerHTML)){
+        } else if(parseInt(input.value) <parseInt(stock)){
             input.value++;
         };
-        console.log(input.value);
+        
 
         if(decremmentButton[i].style.opacity != "1")
         {
@@ -57,6 +59,7 @@ for(let i=0; i < incremmentButton.length; i++){
 for(let i=0; i < decremmentButton.length; i++){
     decremmentButton[i].addEventListener('click', function(event) {
         let input = event.target.parentElement.children[1];
+        console.log(input);
         if (input.value -1 == 0) {
             input.value --;
             event.target.style.opacity = "0.3";

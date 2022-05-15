@@ -17,7 +17,11 @@
 <body>
 
     <?php 
-      include ("phpLinkedPages/header.php");
+      include ("sidebar.html");
+      if(isset($_GET['input_err'])){
+        $err = unserialize($_GET['input_err']);
+        $oldInput= unserialize($_GET['input']);
+      }
     ?>
 
     <section class="contact-section" id="contact_id">
@@ -28,13 +32,13 @@
                 <form action="contact_back.php" method="post">
                   <div class="form-field">
                     <label for="name">Surname</label>
-                    <input type="text" id="surname" name="surname" size="30">
-                    <small></small>
+                    <input type="text" id="surname" name="surname" size="30" <?php if(isset($err)) echo 'value="'.$oldInput["surname"].'"' ?> <?php if(isset($err) && $err['surname'] == false) echo 'class = "error"'; elseif(isset($err)) echo 'class = "success"' ?>>
+                    <small> <?php if(isset($err) && $err['surname'] == false) echo 'This field is required' ?> </small>
                   </div>
                   <div class="form-field">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" size="30">
-                    <small></small>
+                    <input type="text" id="name" name="name" size="30" <?php if(isset($err)) echo 'value="'.$oldInput["name"].'"' ?> <?php if(isset($err) && $err['name'] == false) echo 'class = "error"' ?>>
+                    <small><?php if(isset($err) && $err['name'] == false) echo 'This field is required' ?></small>
                   </div>
                   <div class="form-field">
                     <label for="email">E-mail</label>
@@ -56,10 +60,10 @@
                   
                   <div class="form-field">
                     <label for="radio-1" class="radio-label">Gender</label>
-                    <input type="radio" name="radio" id="radio-1" value="man" class="radio">
+                    <input type="radio" name="radio" id="radio-1" value="1" class="radio">
                     <label for="radio-1" >Man</label>
 
-                    <input type="radio" name="radio" id="radio-2" value="woman" class="radio">
+                    <input type="radio" name="radio" id="radio-2" value="0" class="radio">
                     <label for="radio-2" >Woman</label>
                     <small></small>
                   </div>

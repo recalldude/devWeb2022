@@ -1,3 +1,4 @@
+
 <head>
     
     <link rel="stylesheet" href="./style/sidebar.css">
@@ -23,7 +24,7 @@
                 <ul class="secondary-nav">
                     <li><a href="contact.php">Contact</a></li>
                     <li><a href="shop.php?cat=Planet">Shop</a></li>
-                    <li class="connect-cta"><div><a href="connect.php">Connect</a></div></li>
+                    <li class="connect-cta"><div><?php include('./modifiers/header_modifier.php'); ?></div></li>
             </ul>
             </nav>
         </div>
