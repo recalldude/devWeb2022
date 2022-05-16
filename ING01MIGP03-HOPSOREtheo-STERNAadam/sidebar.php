@@ -9,7 +9,7 @@
     <input type="checkbox" id="sidebar-burger">
     <div class="navbar">
         <div class="container">
-            <label for="sidebar-burger"><i class='bx bx-menu' id="sidebar-btn"></i></label>
+            
             <div class="logoC">
                 <img src="images/Vector.svg"> 
                 <a class="logo" href="index.php">Planet<span>Link</span></a>
@@ -30,6 +30,7 @@
         </div>
     </div>
     <div class="sidebar">
+        <label class="sidebar-label" for="sidebar-burger"><i class='bx bx-menu' id="sidebar-btn"></i></label>
         <div class="top">
             <a href="shop.php?cat=Planet"><i class='bx bx-planet' ></i></box-icon><span>Planet</span></a>
             <a href="shop.php?cat=Ship"><i class='bx bx-rocket'></i></box-icon><span>Spaceship</span></a>
@@ -38,6 +39,7 @@
 
         <div class="bot">
             <a href=""><i class='bx bx-mail-send' ></i><span>Contact Us</span></a>
+            <?php if(isset($_SESSION['user'])) echo'<a href="modifiers\logout.php"><i class="bx bx-log-out"></i></i><span>Log out</span></a>' ?>
         </div>  
     </div>
 </body>

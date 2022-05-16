@@ -16,7 +16,7 @@
 
   
 <div class="form-containner">
-            <form action="signInBack.php" method="post">
+            <form action="signUp_back.php" method="post">
                 <h1 class="title">Sign Up</h1>
                 <div class="content-containner">
                     <div class="input-containner">

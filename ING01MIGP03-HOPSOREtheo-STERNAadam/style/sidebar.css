@@ -1,13 +1,12 @@
 .sidebar{
     background-color:#192a4d ;
-    padding-top: 70px;
+    padding-top: 170px;
     position: fixed;
     left: 0;
     width: 150px;
     height: 100%;
-    transition: 0.3s;
-    opacity: 1;
-    
+    transition: 0.3s; 
+    top: 0;  
 }
 
 .sidebar a{
@@ -20,7 +19,7 @@
     transition: 0.5s;
     transition-property: background-color;
     margin-left: 0px;
-   transition: margin-left 0.3s;
+    transition: margin-left 0.3s;
 }
 
 .sidebar a:hover{
@@ -34,7 +33,11 @@
 label #sidebar-btn{
     z-index: 1;
     font-size: 30px;
-    padding-right: 40px;
+    display: block;
+    margin-left: 0 px;
+    padding-left: 108px;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 #sidebar-burger:checked ~ .sidebar{
@@ -44,20 +47,26 @@ label #sidebar-btn{
 
 #sidebar-burger:checked ~ .sidebar a span{
     opacity: 0;
-    transition: 0.3s;
-    transition-property: opacity;
+    transition: opacity 1s;
+    
     font-size: 0;
+    
 }
 
 #sidebar-burger:checked ~ .sidebar a{
    margin-left: 100px;
    transition: margin-left 0.3s;
    width: 50px;
+   height: 60px;
+}
+
+#sidebar-burger:checked ~ #sidebar-btn {
+  margin-left: 100px;
 }
 
 .sidebar a span{
     opacity: 1;
-    transition: 0.3s;
+    transition: 1s;
     transition-property: opacity;
 }
 
@@ -65,8 +74,13 @@ label #sidebar-btn{
     display: none;
 }
 
+.bot{
+  margin-top: 50px;
+}
 
-
+.top{
+  padding-top: 20px;
+}
 
 
 
