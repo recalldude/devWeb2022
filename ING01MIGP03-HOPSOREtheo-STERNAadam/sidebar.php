@@ -24,7 +24,7 @@
                 <ul class="secondary-nav">
                     <li><a href="contact.php">Contact</a></li>
                     <li><a href="shop.php?cat=Planet">Shop</a></li>
-                    <li class="connect-cta"><div><?php include('./modifiers/header_modifier.php'); ?></div></li>
+                    <li class="connect-cta"><div><?php include('controllers\header_controller.php'); ?></div></li>
             </ul>
             </nav>
         </div>
@@ -39,7 +39,7 @@
 
         <div class="bot">
             <a href=""><i class='bx bx-mail-send' ></i><span>Contact Us</span></a>
-            <?php if(isset($_SESSION['user'])) echo'<a href="modifiers\logout.php"><i class="bx bx-log-out"></i></i><span>Log out</span></a>' ?>
+            <?php if(isset($_SESSION['user'])) echo'<a href="controllers\logout.php"><i class="bx bx-log-out"></i></i><span>Log out</span></a>' ?>
         </div>  
     </div>
 </body>

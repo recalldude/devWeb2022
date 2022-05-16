@@ -3,8 +3,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/connect.css">
+    <link rel="stylesheet" href="./style/style.css">
+    
     <title>PlanetLink</title>
 </head>
 
@@ -26,8 +27,9 @@
                         <input type="password" name="password" placeholder="Password">
                     </div>
                 </div>
-                <?php include('modifiers\connect_modifier.php') ?>
+                <?php include('controllers\connect_controller.php'); ?>
                 <p>If you dont have an account you can register <a href="signup.php">here</a></p>
+                
                 <div class="action">
                     <button type="submit">Sign in</button>
                 </div>

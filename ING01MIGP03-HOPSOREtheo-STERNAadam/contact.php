@@ -17,7 +17,7 @@
 <body>
 
     <?php 
-      include ("sidebar.html");
+      include ("sidebar.php");
       if(isset($_GET['input_err'])){
         $err = unserialize($_GET['input_err']);
         $oldInput= unserialize($_GET['input']);

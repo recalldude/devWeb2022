@@ -11,12 +11,12 @@
 <body>
 
   <?php 
-  include ("sidebar.html");
+  include ("sidebar.php");
 ?>
 
   
 <div class="form-containner">
-            <form action="signUp_back.php" method="post">
+            <form action="signup_back.php" method="post">
                 <h1 class="title">Sign Up</h1>
                 <div class="content-containner">
                     <div class="input-containner">
@@ -32,7 +32,7 @@
                         <input type="password" name="password_confirm" placeholder="Confirm password" required="required">
                     </div>
                 </div>
-                <?php include('modifiers\connect_modifier.php') ?>
+                <?php include('controllers\signup_controller.php'); ?>
                 <p>If you already have a account you can connect <a href="connect.php">here</a></p>
                 <div class="action">
                     <button type="submit">Sign Up</button>

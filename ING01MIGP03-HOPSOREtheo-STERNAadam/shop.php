@@ -17,7 +17,7 @@
 <body>
     <?php
         include("varSession.inc.php");
-        include ("sidebar.html");
+        include ("sidebar.php");
     ?>
 
    <div class="main">
