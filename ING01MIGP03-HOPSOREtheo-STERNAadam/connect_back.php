@@ -16,6 +16,7 @@
                 $password = hash('sha256', $password);
                 if($password == $user["password"]){
                     $_SESSION["user"] = $username;
+                    $_SESSION['type'] = $user['type'];
                     header('Location:index.php');
                 }else header('Location:connect.php?login_err=password');
             }

@@ -70,7 +70,7 @@ label #sidebar-btn{
     transition-property: opacity;
 }
 
-#sidebar-burger{
+#sidebar-burger, #checkbasket{
     display: none;
 }
 
@@ -83,7 +83,30 @@ label #sidebar-btn{
 }
 
 
+.label-cart{
+  margin: 0;
+  padding: 5px 12px 5px 12px;
+  background-color: #232D53;
+  border-radius: inherit;
+  cursor: pointer;
+}
 
+.label-cart:hover{
+  background: none;
+}
+
+.cart-bar{
+  
+  background-color: wheat;
+  position: sticky;
+  right: 0;
+  top: 0;
+  padding-top: 170px;
+}
+
+.corps{
+  position: absolute;
+}
 
 /* */
 

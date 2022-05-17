@@ -33,7 +33,8 @@
                             $data = array(
                                 'pseudo' => $pseudo,
                                 'email' => $email,
-                                'password' => $password
+                                'password' => $password,
+                                'type' => 'user'
                             );
 
                             array_push($connectArray["data"], $data);

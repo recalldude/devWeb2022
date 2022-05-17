@@ -35,7 +35,7 @@
   width: 100%;
   justify-content: center;
 }
-
+/*
 .product-img img:hover {
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5);
@@ -43,7 +43,7 @@
     cursor: zoom-in;
 
 }
-
+*/
 .product-ref, .stock, .stock-title {
     font-weight: lighter;
     font-size: small;
@@ -64,7 +64,10 @@
 }
 
 
-
+.product-body{
+  position: relative;
+  bottom: 0;
+}
 
 
 .product-header{
@@ -127,3 +130,5 @@
     margin-top: 80px;
     margin-bottom: 50px;
   }
+
+  

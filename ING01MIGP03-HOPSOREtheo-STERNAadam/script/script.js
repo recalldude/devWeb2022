@@ -15,7 +15,7 @@ let inputEl = document.querySelectorAll(".input-qty");
 
 
 /*Permet d'activer la fonction showStock() en cliquant sur le boutton de classe '.stock-btn' */
-showStockButton.addEventListener("click", showStock);
+
 
 
 /*Permet de ne pas dépasser le stock même à l'écrit*/
@@ -27,22 +27,26 @@ for (let i=0; i < stockEl.length; i++){
        } else if(event.target.value < 0) {
             event.target.value = 0;
        }
+       event.preventDefault;
    });
 };
 
 /*Pour incrémenter la qte*/
 for(let i=0; i < incremmentButton.length; i++){
     incremmentButton[i].addEventListener('click', function(event) {
-        let stock = event.target.parentElement.parentElement.parentElement.children[1].children[3].children[1].innerHTML;
+        let stock = event.target.parentElement.parentElement.parentElement.children[2].value;
+        console.log("test");
         let input = event.target.parentElement.children[1];
-        console.log(input);
+        
        
         if (parseInt(input.value) + 1 == parseInt(stock)) {
             input.value++;
+            
             event.target.style.opacity = "0.3";
             event.target.style.cursor = "default";  
         } else if(parseInt(input.value) <parseInt(stock)){
             input.value++;
+            
         };
         
 
@@ -84,7 +88,7 @@ for(let i=0; i < decremmentButton.length; i++){
 
 
 
-
+showStockButton.addEventListener("click", showStock);
 
 /*permet d'afficher ou de cacher la div '.stock-containner' qui affiche le stock*/
 function showStock(){
