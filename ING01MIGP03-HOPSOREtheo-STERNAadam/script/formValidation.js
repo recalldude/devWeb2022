@@ -10,7 +10,7 @@ let form = document.querySelector("form");
 
 
 form.addEventListener("submit", function(event){
-    event.preventDefault();
+    
 
     let validName = checkName(nameEl);
     let validSurname = checkName(surnameEl);
@@ -23,6 +23,8 @@ form.addEventListener("submit", function(event){
     
     if(validForm) {
 
+    }else {
+        event.preventDefault();
     }
 });
 

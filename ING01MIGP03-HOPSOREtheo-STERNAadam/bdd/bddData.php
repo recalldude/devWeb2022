@@ -1,5 +1,5 @@
 <?php
-    $connPassword = "Root123!";
+    $connPassword = "root";
     $dbUser = "root";
     $dbHostName = "localhost";
     $dbName = "planetlink";
