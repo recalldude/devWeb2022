@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include('sidebar.php') ?>
+    <?php include('./phpLinkedPages/sidebar.php') ?>
     <h2>Cart</h2>
     <div class="table">
         <table>

@@ -11,7 +11,7 @@
 <body>
 
   <?php 
-  include ("sidebar.php");
+  include ("./phpLinkedPages/sidebar.php");
 ?>
 
   

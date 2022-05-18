@@ -36,6 +36,7 @@
 
 .success {
     border-color: green;
+    color: green;
 }
 
 
@@ -46,4 +47,12 @@
 .main {
     display: flex;
     justify-content: space-around;
+}
+
+.radio {
+    width: 6%;
+}
+
+.form-field label{
+    display: inline;
 }

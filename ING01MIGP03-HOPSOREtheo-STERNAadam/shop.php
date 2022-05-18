@@ -21,7 +21,7 @@
 <body>
     <?php
        // include("varSession.inc.php"); 
-        include ("sidebar.php");
+        include ("./phpLinkedPages/sidebar.php");
     ?>
 
    <div class="main">

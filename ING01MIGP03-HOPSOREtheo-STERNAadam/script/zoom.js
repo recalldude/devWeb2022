@@ -9,7 +9,7 @@ imageEl.forEach(image => {
         lightbox.classList.add('active')
         const img = document.createElement('img');
         img.src = image.src;
-        console.log(img.src);
+        
         while(lightbox.firstChild){
             lightbox.removeChild(lightbox.firstChild);
         }

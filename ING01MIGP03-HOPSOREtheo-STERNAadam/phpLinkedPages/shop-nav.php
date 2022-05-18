@@ -3,7 +3,7 @@
 <div class="top">
     <ul>
         <?php
-        include 'bdd.php';
+        include 'bdd/bdd.php';
 
         function getLogo(){
             global $db;

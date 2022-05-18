@@ -13,7 +13,7 @@
 <body>
 
   <?php 
-  include ("sidebar.php");
+  include ("./phpLinkedPages/sidebar.php");
 ?>
 
   
@@ -21,8 +21,9 @@
             <div  class="left-col">
               <p class="product-detail"><h1>ABOUT US</h1><br></br>
               <p>We are the sellers of the best quality planets. This company comes from a common passion for astronomy and space exploration!<br></br></p>
-              <br>Adam STERNA </br>
               <br>Théo HOPSORE  </br>
+              <br>Adam STERNA </br>
+              
 </div>
 
 </body>
