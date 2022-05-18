@@ -27,7 +27,7 @@
                         <input type="password" name="password" placeholder="Password">
                     </div>
                 </div>
-                <?php include('controllers\connect_controller.php'); ?>
+                <?php include('./controllers/connect_controller.php'); ?>
                 <p>If you dont have an account you can register <a href="signup.php">here</a></p>
                 
                 <div class="action">

@@ -31,7 +31,7 @@
     </div>
     <div class="sidebar">
         <label class="sidebar-label" for="sidebar-burger"><i class='bx bx-menu-alt-left' id='sidebar-btn'></i></label>
-        <?php include('./phpLinkedPages/shop-nav.php') ?>
+        <?php include('shop-nav.php') ?>
        <!-- <div class="top">
             <a href="shop.php?cat=Planet"><i class='bx bx-planet' ></i></box-icon><span>Planet</span></a>
             <a href="shop.php?cat=Ship"><i class='bx bx-rocket'></i></box-icon><span>Spaceship</span></a>

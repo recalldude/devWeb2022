@@ -8,7 +8,7 @@
         function getLogo(){
             global $db;
             $bigarray = array();
-            $sql = "SELECT * FROM LogoType";
+            $sql = "SELECT * FROM logotype";
             $check = $db->prepare($sql, array(PDO::ATTR_CURSOR, PDO::CURSOR_SCROLL));
             $check->execute();
 
