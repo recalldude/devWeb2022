@@ -12,10 +12,9 @@ session_start();
                     );
                 $_SESSION['cart'][$count] = $item;
             } else {
-                foreach($_SESSION['cart'] as $key => $values){
+                foreach($_SESSION['cart'] as $key => &$values){
                     if($values['name'] == $_POST['hidden_name']){
-                        $new_qty = $key['qty'] + $_POST['qty'];
-                       array_replace($key, [$key['qty'] => $new_qty]);
+                        $values['qty'] += $_POST['qty'];
                     }
                 }
             }

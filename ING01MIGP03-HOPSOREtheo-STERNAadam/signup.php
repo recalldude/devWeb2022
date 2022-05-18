@@ -32,7 +32,7 @@
                         <input type="password" name="password_confirm" placeholder="Confirm password" required="required">
                     </div>
                 </div>
-                <?php include('controllers\signup_controller.php'); ?>
+                <?php include('./controllers/signup_controller.php'); ?>
                 <p>If you already have a account you can connect <a href="connect.php">here</a></p>
                 <div class="action">
                     <button type="submit">Sign Up</button>

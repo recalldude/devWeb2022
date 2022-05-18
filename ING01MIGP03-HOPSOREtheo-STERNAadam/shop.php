@@ -1,5 +1,6 @@
 <?php 
     session_start();
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    
+    <script type="text/javascript" src="shop.js"></script>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/shop.css">
     <link rel="stylesheet" href="./style/lightbox.css">
@@ -17,7 +20,7 @@
 </head>
 <body>
     <?php
-        include("varSession.inc.php");
+       // include("varSession.inc.php"); 
         include ("sidebar.php");
     ?>
 
@@ -30,7 +33,7 @@
        
        <h2 class="shop-section-title"><?php echo $_GET["cat"] ?></h2>
        <div class="planet-container">
-       <?php 
+       <?php /*
         foreach($productsList as $cat => $catProducts){
             if ($cat != $_GET["cat"]){
                 continue;
@@ -39,8 +42,48 @@
                 product($info);
             }   
         }
-    ?>
+   */ ?> 
     
+        <?php
+
+        // $result = $check->fetch(PDO::FETCH_ASSOC);
+        function getProducts($type){
+            // include 'bdd.php';
+            global $db;
+            $sql = "SELECT * FROM product WHERE type='".$type."'";
+            $check = $db->prepare($sql);
+            $check = $db->prepare($sql, array(PDO::ATTR_CURSOR, PDO::CURSOR_SCROLL));
+            $check ->execute();
+            $bigarray = array();
+            while ($row = $check->fetch(PDO::FETCH_NUM, PDO::FETCH_ORI_NEXT)){
+                $array = array();
+                $save = "";
+                for ($i = 0; $i<count($row); $i++){
+                    array_push($array, $row[$i]);
+                    //echo $row[$i].", ";
+                    if ($i == 1){
+                        $save = $row[$i];
+                    }
+                }
+                //echo $save;
+                //print_r($array);
+                $bigarray[$save] = $array;
+                //echo "<br>";
+            }
+            return $bigarray;
+        };
+
+        
+
+        $bigarray = getProducts($_GET["cat"]);
+        // print_r($bigarray);
+
+        foreach($bigarray as $product => $info){
+            product($info);
+        }   
+        // print_r($result);
+         ?>
+        
            <?php 
            function product($product){
             echo'
@@ -64,7 +107,7 @@
                 if(isset($_SESSION['type']) && $_SESSION['type'] == "admin"){
                     echo'<div class="stock-containner">
                             <h3 class="stock-title">Stock: </h3>   
-                            <h3 class="stock planet" >'.$product[4].'</h3>
+                            <h3 class="stock planet">'.$product[4].'</h3>
                         </div>';
                 }
                    

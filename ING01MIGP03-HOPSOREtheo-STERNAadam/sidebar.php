@@ -24,14 +24,14 @@
                 <ul class="secondary-nav">
                     <li><a href="contact.php" id="test">Contact</a></li>
                     <li><a href="shop.php?cat=Planet">Shop</a></li>
-                    <li class="connect-cta"><div><?php include('controllers\header_controller.php'); ?></div></li>
+                    <li class="connect-cta"><div><?php include('./controllers/header_controller.php'); ?></div></li>
             </ul>
             </nav>
         </div>
     </div>
     <div class="sidebar">
         <label class="sidebar-label" for="sidebar-burger"><i class='bx bx-menu-alt-left' id='sidebar-btn'></i></label>
-        <?php include('phpLinkedPages\shop-nav.php') ?>
+        <?php include('./phpLinkedPages/shop-nav.php') ?>
        <!-- <div class="top">
             <a href="shop.php?cat=Planet"><i class='bx bx-planet' ></i></box-icon><span>Planet</span></a>
             <a href="shop.php?cat=Ship"><i class='bx bx-rocket'></i></box-icon><span>Spaceship</span></a>

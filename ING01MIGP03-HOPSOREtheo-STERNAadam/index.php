@@ -55,7 +55,7 @@
     </section> 
 
     <?php 
-      include ("phpLinkedPages/footer.html");
+      include ("./phpLinkedPages/footer.html");
     ?>
     
 </body>
